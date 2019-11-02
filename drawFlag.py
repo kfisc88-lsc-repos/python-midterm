@@ -8,9 +8,9 @@ Midterm Project - American Flag
 from turtle import Turtle
 
 
-#----------------------------------------------------------------
-# Determiens if a number is odd or even for alternating sequences
-#----------------------------------------------------------------
+#-----------------------------------------------------------------#
+# Determiens if a number is odd or even for alternating sequences #
+#-----------------------------------------------------------------#
 def even(n):
 	if n % 2 == 0:
 		return True
@@ -18,9 +18,9 @@ def even(n):
 		return False
 
 
-#----------------------------------------------------------------
-# This draws the flag stripes, given turtle, height, width, and xy
-#----------------------------------------------------------------
+#------------------------------------------------------------------#
+# This draws the flag stripes, given turtle, height, width, and xy #
+#------------------------------------------------------------------#
 def drawFlag(t, height, width, x, y):
 	for stripe in range(13):
 		if even(stripe):
@@ -40,9 +40,9 @@ def drawFlag(t, height, width, x, y):
 		t.goto(x, y)
 
 
-#----------------------------------------------------------------
-# Draws the rectangle where the stars are drawn
-#----------------------------------------------------------------
+#----------------------------------------------------------------#
+# Draws the rectangle where the stars are drawn			 #
+#----------------------------------------------------------------#
 def drawStarField(t):
         t.setheading(0)
         t.pendown()
@@ -59,9 +59,9 @@ def drawStarField(t):
         t.end_fill()
 
 
-#----------------------------------------------------------------
-# Draws a white star
-#----------------------------------------------------------------
+#----------------------------------------------------------------#
+# Draws a white star						 #
+#----------------------------------------------------------------#
 def drawStar(t):
     t.setheading(36)
     count = 0
@@ -76,9 +76,9 @@ def drawStar(t):
     t.end_fill()
 
 
-#----------------------------------------------------------------
-# Sets position of each star then draws it by calling drawStar
-#----------------------------------------------------------------
+#----------------------------------------------------------------#
+# Sets position of each star then draws it by calling drawStar   #
+#----------------------------------------------------------------#
 def fiftyStars(t, x, y):
     count = 0
     stars = 0
@@ -101,9 +101,9 @@ def fiftyStars(t, x, y):
         count += 1
 
 
-#----------------------------------------------------------------
-# This is the main function
-#----------------------------------------------------------------
+#----------------------------------------------------------------#
+# This is the main function					 #
+#----------------------------------------------------------------#
 def main():
     t = Turtle()
     t.speed(0)
