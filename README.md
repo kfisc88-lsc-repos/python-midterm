@@ -1,2 +1,3 @@
-# Midterm-Projects
-Project for drawing an American flag using the Python Turtle module
+# python-midterm-projects
+Project1 = Draw an American flag using the Python Turtle module
+Project2 = Hangman game
